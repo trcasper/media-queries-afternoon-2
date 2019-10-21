@@ -1,0 +1,184 @@
+nav {
+  height: 75px;
+  background-color: rgb(46, 46, 46);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+
+}
+
+#bootstrap-logo {
+  font-family: 'Mansalva', cursive;
+  color: rgb(192, 192, 60);
+  margin-left: 20%;
+  margin-right: 25px;
+  font-size: 25px;
+}
+
+#button-container {
+  display: flex;
+  align-content: center;
+  margin-right: 10%;
+}
+
+.button {
+  width: 75px;
+  text-align: center;
+  padding: 10px 0px;
+  margin-right: 20px;
+
+  font-size: 16px;
+  color: white;
+
+}
+
+.button:hover {
+  color: rgb(199, 199, 82);
+  transition: .3s;
+ 
+}
+
+#stuff {
+  height: calc(100vh - 50px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#hamburger-icon {
+  width: 80px;
+  margin-right: 20px;
+  color: rgb(192, 192, 60);
+
+}
+
+.dropdown {
+  height: 0;
+  overflow: hidden; 
+  position: fixed;
+  top: 50px;
+  right: 0;
+  /* background-color: black; */
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  /* align-items: center; */
+  border-bottom-left-radius: 6px;
+  padding-left: 22%;
+  
+
+}
+
+.hide-animation {
+  animation-name: hide;
+  animation-duration: .5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.show-animation {
+  animation-name: show;
+  animation-duration: .5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes hide {
+  0% {
+    height: 100px;
+  }
+  100% {
+    height: 0px;
+  }
+}
+
+@keyframes show {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 200px;
+  }
+}
+
+
+@media (max-width: 800px) {
+  #button-container {
+    display: none;
+  }
+  nav, .dropdown {
+    background-color: rgb(46, 46, 46);
+}
+}
+
+@media (min-width: 800px) {
+  #hamburger-icon, .dropdown {
+    display: none;
+  }
+  nav, .dropdown{
+    background-color: rgb(46, 46, 46);
+  }
+  
+
+}
+
+
+/* //Body// */
+
+body {
+  background-color: rgb(151, 130, 76);
+  height: 90vh;
+  width: 100%;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+}
+
+.welcome{
+  background-color: rgb(151, 130, 76);
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  
+}
+
+.meet {
+  background-color: rgb(151, 130, 76);
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.tell {
+  background-color: rgb(151, 130, 76);
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.services {
+  background-color: white;
+  height: 35vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+
+
